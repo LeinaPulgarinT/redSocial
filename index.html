@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Clonefacebook</title>
+</head>
+
+<body>
+    <header class="bg-primary py-2">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-auto d-none d-lg-block">
+                    <a href=""><img class="order-1" src="./img/logo.png" alt=""> </a>
+                </div>
+                <div class="col-12 col-sm-8 col-lg-6 order-2 order-sm-1 mb-2 mb-sm-0">
+                    <!-- <div class="col-12 col-sm-8 col-lg-6 order-2 order-sm-1 mb-2 mb-sm-0"></div> -->
+                    <form action="">
+                        <!-- no-gutters es para ajuntar dos columnas -->
+                        <div class="row no-gutters">
+                            <div class="col-10 ">
+                                <input class="bg-white w-100 border-0 px-4 rounded-left" type="text" placeholder="Amigos, lugares, y cosas que te gustan">
+                            </div>
+                            <div class="col-2">
+                                <button class="bg-white w-100 border-0 px-4 rounded-right"><i class="fas fa-search"></i> </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- <nav class="col-12 col-sm-3 col-lg-2 d-flex justify-content-between ml-auto order-1 order-sm-2 mb-2 mb-sm-0"> -->
+                <nav class="col d-flex justify-content-between ml-auto order-3">
+                    <!-- "col d-flex justify-content-between ml-auto order-3" -->
+                    <a class="text-white" href=""><i class="fas fa-users"></i> </a>
+                    <a class="text-white" href=""><i class="fas fa-bell"></i> </a>
+                    <a class="text-white" href=""><i class="fas fa-comments"></i> </a>
+                    <!-- rounded-circle es para convertir la imagen en un circulo -->
+                    <a class="text-white" href=""><img class="rounded-circle" src="./img/persona2.jpg" width="22" height="22" alt=""></a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="container mt-4">
+        <div class="row">
+            <!-- la siguiente linea de codigo debo arreglarla con un media query -->
+            <div class="col-3 d-lg-block d-none">
+                <nav class="menu">
+                    <a class="d-block p-2 text-decoration-none text-secondary" href=""> <i class="fas fa-users mr-3"></i>Amigos</a>
+                    <a class="d-block p-2 text-decoration-none text-secondary" href=""> <i class="fas fa-envelope mr-3"></i>Mensajes Privados</a>
+                    <a class="d-block p-2 text-decoration-none text-secondary" href=""> <i class="fas fa-thumbs-up mr-3"></i>Páginas</a>
+                    <a class="d-block p-2 text-decoration-none text-secondary" href=""> <i class="fas fa-play mr-3"></i>Videos</a>
+                    <a class="d-block p-2 text-decoration-none text-secondary" href=""> <i class="fas fa-file-image mr-3"></i>Fotos</a>
+                    <a class="d-block p-2 text-decoration-none text-secondary" href=""> <i class="fas fa-book mr-3"></i>Libros</a>
+                </nav>
+            </div>
+
+            <!-- seccion publicar mensaje -->
+            <div class="col ">
+                <div class="row mb-3">
+                    <div class="col-auto">
+                        <a href=""><img class="rounded-circle" src="./img/persona2.jpg" width="60" height="60" alt=""></a>
+                    </div>
+                    <div class="col">
+                        <form action="">
+                            <textarea class="w-100 px-3 shadow-sm " placeholder="Publicar mensaje" name="" id="" cols="30" rows="10"></textarea>
+                            <div class="d-flex justify-content-between border-bottom py-3">
+                                <div>
+                                    <a class="text-secondary" href=""><i class="fas fa-file-image mr-3"></i></a>
+                                    <a class="text-secondary" href=""><i class="fas fa-play mr-3"></i></a>
+                                    <a class="text-secondary" href=""><i class="fas fa-music mr-3"></i></a>
+
+                                </div>
+                                <div>
+                                    <button class="px-4 bg-primary text-white rounded border-0">Publicar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+                <!-- PUBLICACIONES -->
+
+                <div class="row">
+                    <!-- investigar col-auto -->
+                    <div class="col-auto">
+                        <a href=""><img class="rounded-circle" width="60" height="60" src="img/persona2.jpg" alt=""></a>
+                    </div>
+                    <div class="col">
+                        <div class="col-pb-2">
+                            <h5>
+                                <a class="" href="">Andrea Lorem</a>
+                            </h5>
+                        </div>
+                        <p class="bg-white p-3 ">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem iure animi in? Labore similique exercitationem quas consequatur.
+                        </p>
+                        <div class="d-flex justify-content-between">
+                            <button class="bg-primary text-white border-0 rounded py-0 px-4"><i class="far fa-thumbs-up "></i></button>
+                            <p class="text-primary mb-0 py-2">15 <i class="far fa-thumbs-up "></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- offset-2  es para que se corra dos columnas-->
+                    <div class="col-10 offset-2">
+                        <!-- no-gutters es para que no hayan espacios, une dos columnas -->
+                        <div class="row no-gutters mt-4 pb-3 border-bottom">
+                            <div class="col-auto">
+                                <a href="">
+                                    <img class="rounded-circle mr-4" src="./img/persona2.jpg" alt="" width="40px" height="40">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <form action="">
+                                    <textarea class="w-100 border text-secondary" placeholder="Comentario" name="" id=""></textarea>
+                                </form>
+                            </div>
+
+                        </div>
+                        <div class=" row no-gutters my-3 pb-3 border-bottom">
+                            <div class="col-auto">
+                                <a href=""><img class="rounded-circle mr-4" src="./img/persona2.jpg" width="40" height="40" alt=""></a>
+                            </div>
+                            <div class="col">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <a href="">Me gusta</a>
+                            </div>
+                        </div>
+                        <div class=" row no-gutters my-3 pb-3 border-bottom">
+                            <div class="col-auto">
+                                <a href=""><img class="rounded-circle mr-4" src="./img/persona2.jpg" width="40" height="40" alt=""></a>
+                            </div>
+                            <div class="col">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <a href="">Me gusta</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-auto">
+                        <a href=""><img class="rounded-circle" width="60" height="60" src="img/persona2.jpg" alt=""></a>
+                    </div>
+                    <div class="col">
+                        <div class="col-pb-2">
+                            <h5>
+                                <a class="" href="">Carlos Lorem</a>
+                            </h5>
+                        </div>
+                        <img class="bg-white p-3 w-100 img-fluid mb-2" src="./img/persona2.jpg" alt="">
+                        <div class="d-flex justify-content-between">
+                            <button class="bg-primary text-white border-0 rounded py-0 px-4"><i class="far fa-thumbs-up "></i></button>
+                            <p class="text-primary mb-0 py-2">15 <i class="far fa-thumbs-up "></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- offset-2  es para que se corra dos columnas-->
+                    <div class="col-10 offset-2">
+                        <!-- no-gutters es para que no hayan espacios, une dos columnas -->
+                        <div class="row no-gutters mt-4 pb-3 border-bottom">
+                            <div class="col-auto">
+                                <a href="">
+                                    <img class="rounded-circle mr-4" src="./img/persona2.jpg" alt="" width="40px" height="40">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <form action="">
+                                    <textarea class="w-100 border text-secondary" placeholder="Comentario" name="" id=""></textarea>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-auto">
+                        <a href=""><img class="rounded-circle" width="60" height="60" src="img/persona2.jpg" alt=""></a>
+                    </div>
+                    <div class="col">
+                        <div class="col-pb-2">
+                            <h5>
+                                <a class="" href="">Alejandro Lorem</a>
+                            </h5>
+                        </div>
+                        <img class="bg-white p-3 w-100 img-fluid mb-2" src="./img/persona2.jpg" alt="">
+                        <div class="d-flex justify-content-between">
+                            <button class="bg-primary text-white border-0 rounded py-0 px-4"><i class="far fa-thumbs-up "></i></button>
+                            <p class="text-primary mb-0 py-2">15 <i class="far fa-thumbs-up "></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- offset-2  es para que se corra dos columnas-->
+                    <div class="col-10 offset-2">
+                        <!-- no-gutters es para que no hayan espacios, une dos columnas -->
+                        <div class="row no-gutters mt-4 pb-3 border-bottom">
+                            <div class="col-auto">
+                                <a href="">
+                                    <img class="rounded-circle mr-4" src="./img/persona2.jpg" alt="" width="40px" height="40">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <form action="">
+                                    <textarea class="w-100 border text-secondary" placeholder="Comentario" name="" id=""></textarea>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-3 d-none d-lg-block">
+                <h5 class="text-center text-secondary">Publicidad</h5>
+                <div class="">
+                    <a class="mr-3" href="">Privacidad</a>
+                    <a href="mr-3">Condiciones</a><br>
+                    <a href="mr-3">Terminos y Condiciones</a>
+                </div>
+                <p>AgileInnova &copy;2020</p>
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/cd2331958e.js" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/popper.min.js">
+    </script>
+
+</body>
+
+</html>
